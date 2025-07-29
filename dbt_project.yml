@@ -1,0 +1,12 @@
+name: 'sales_reporting_dbt'
+version: '1.0'
+profile: sales_reporting_dbt
+
+config-version: 2
+
+models:
+  sales_reporting_dbt:
+    base:
+      materialized: view
+    marts:
+      materialized: view
