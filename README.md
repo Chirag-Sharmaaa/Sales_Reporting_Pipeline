@@ -2,7 +2,7 @@
 
 > 📊 A complete automated sales reporting solution using PostgreSQL, DBT, Power BI, and Apache Airflow.
 
-![Dashboard Screenshot](https://your-screenshot-url-here) <!-- Replace with actual link -->
+![Dashboard Screenshot](image.png) 
 
 ---
 
