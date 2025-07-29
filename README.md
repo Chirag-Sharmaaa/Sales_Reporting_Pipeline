@@ -6,6 +6,26 @@
 
 ---
 
+## 🎯 Why This Project Matters
+
+In fast-moving retail or e-commerce environments, teams often rely on **automated, daily reporting systems** to stay on top of:
+
+- 📈 **Sales trends**
+- 🚚 **Regional performance**
+- 💰 **Profitability insights**
+- 📦 **Product-level contributions**
+
+This project simulates that very pipeline, giving you:
+
+- ✅ **Automated data ingestion** from daily CSVs
+- ✅ **Transformations using DBT** for maintainable modeling
+- ✅ **Interactive dashboards** for business users
+- ✅ **Airflow-based orchestration**, just like in real-world data teams
+
+It's not just a demo — it's a **production-grade analytics pipeline** simplified for learning and showcasing!
+
+---
+
 ## 🧾 Tech Stack & Workflow
 
 1. **Ingest** fresh CSV data using Python + SQLAlchemy → PostgreSQL  
@@ -16,26 +36,19 @@
 ---
 
 ## 📂 Project Structure  
-Sales_Reporting_Pipeline/
-├── superstore_sales_data.csv
-├── sales_overview_dashboard/
-│ └── Sales_Overview.pbix
-├── CSV_Ingestion/
-│ └── ingestion_code.ipynb
-├── sales_reporting_dbt/
-│ ├── dbt_project.yml
-│ └── models/
-│ ├── top_products.sql
-│ ├── regional_sales.sql
-│ └── orders_summary.sql
-├── airflow_dags/
-│ ├── dags/
-│ │ └── sales_reporting_dag.py
-│ └── scripts/
-│ ├── ingest_csv.py
-│ └── run_dbt.bat
-├── requirements.txt
-└── README.md  
+| Folder / File Path                         | Description                                      |
+|-------------------------------------------|--------------------------------------------------|
+| `superstore_sales_data.csv`               | Raw sales data used for ingestion               |
+| `sales_overview_dashboard/Sales_Overview.pbix` | Final Power BI dashboard                       |
+| `CSV_Ingestion/ingestion_code.ipynb`      | CSV to PostgreSQL ingestion using pandas & SQLAlchemy |
+| `sales_reporting_dbt/dbt_project.yml`     | DBT project configuration file                  |
+| `sales_reporting_dbt/models/top_products.sql` | DBT model: Top selling products               |
+| `sales_reporting_dbt/models/regional_sales.sql` | DBT model: Regional monthly sales           |
+| `sales_reporting_dbt/models/orders_summary.sql` | DBT model: Order-level summary             |
+| `airflow_dags/dags/sales_reporting_dag.py` | Airflow DAG automating ingestion & DBT refresh |
+| `airflow_dags/scripts/ingest_csv.py`      | Python script for daily CSV ingestion          |
+| `airflow_dags/scripts/run_dbt.bat`        | Batch file to run DBT models automatically     |
+| `requirements.txt`                        | Python dependencies (optional)                 |
 
 
 ---
@@ -74,19 +87,3 @@ Sales_Reporting_Pipeline/
 4. Power BI dashboard connects to `Sales_Reporting` PostgreSQL DB for live visuals
 
 ---
-
-## ✍️ Author
-
-**Chirag Sharma**  
-_Data Engineering Intern • SQL • Python • DBT • Airflow • Power BI_  
-🔗 [GitHub Profile](https://github.com/Chirag-Sharmaaa)
-
----
-
-## 📎 Notes
-
-- `logs/` and `.ipynb_checkpoints/` folders were excluded to keep the repo clean.
-- Use `requirements.txt` to set up any missing Python dependencies locally.
-
----
-
