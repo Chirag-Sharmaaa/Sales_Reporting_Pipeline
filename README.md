@@ -39,8 +39,7 @@ It's not just a demo — it's a **production-grade analytics pipeline** simplifi
 | Folder / File Path                         | Description                                      |
 |-------------------------------------------|--------------------------------------------------|
 | `superstore_sales_data.csv`               | Raw sales data used for ingestion               |
-| `sales_overview_dashboard/Sales_Overview.pbix` | Final Power BI dashboard                       |
-| `CSV_Ingestion/ingestion_code.ipynb`      | CSV to PostgreSQL ingestion using pandas & SQLAlchemy |
+| `sales_overview_dashboard/sales_overview_dashboard.pbix` | Final Power BI dashboard                   |
 | `sales_reporting_dbt/dbt_project.yml`     | DBT project configuration file                  |
 | `sales_reporting_dbt/models/top_products.sql` | DBT model: Top selling products               |
 | `sales_reporting_dbt/models/regional_sales.sql` | DBT model: Regional monthly sales           |
@@ -48,7 +47,6 @@ It's not just a demo — it's a **production-grade analytics pipeline** simplifi
 | `airflow_dags/dags/sales_reporting_dag.py` | Airflow DAG automating ingestion & DBT refresh |
 | `airflow_dags/scripts/ingest_csv.py`      | Python script for daily CSV ingestion          |
 | `airflow_dags/scripts/run_dbt.bat`        | Batch file to run DBT models automatically     |
-| `requirements.txt`                        | Python dependencies (optional)                 |
 
 
 ---
